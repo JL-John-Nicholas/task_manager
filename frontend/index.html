@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Task Manager App - Login</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
-<body class="flex items-center justify-center min-h-screen bg-[#f0f2f5] px-4">
-  <div class="auth-container w-full max-w-md">
-    <h1 class="app-title text-2xl font-bold text-center mb-2">📝 Task Manager App</h1>
-    <h2 id="form-title" class="text-center text-lg font-semibold text-[#2c3e50] mb-6">Login</h2>
 
-    <form id="auth-form" class="space-y-4">
+<body>
+  <div class="auth-container">
+    <h1 class="app-title">📝 Task Manager App</h1>
+    <h2 id="form-title">Login</h2>
+
+    <form id="auth-form">
       <input type="text" id="username" name="username" placeholder="Username" required />
       <input type="password" id="password" name="password" placeholder="Password" required />
       <button type="submit" id="submit-btn">Login</button>
     </form>
 
-    <div id="toggle-form" class="text-center mt-4">
-      <p>Don't have an account? <a href="#" id="toggle-link" class="text-[#2980b9] font-bold hover:underline">Register here</a></p>
+
+    <div id="toggle-form">
+      <p>Don't have an account? <a href="#" id="toggle-link">Register here</a></p>
     </div>
   </div>
 
   <script src="js/auth.js"></script>
 </body>
+
 </html>
