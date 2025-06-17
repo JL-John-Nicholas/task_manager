@@ -37,21 +37,23 @@ Manage tasks across a Kanban board with features like user authentication, task 
 
 ## 📁 Folder Structure
 
+```
 .
 ├── backend
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ ├── controllers/ # (optional)
-│ ├── server.js
-│ └── .env # Environment variables
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── controllers/      # (optional)
+│   ├── server.js
+│   └── .env              # Environment variables
 ├── frontend
-│ ├── index.html
-│ ├── dashboard.html
-│ ├── js/
-│ ├── styles/
-│ └── _redirects
+│   ├── index.html
+│   ├── dashboard.html
+│   ├── js/
+│   ├── styles/
+│   └── _redirects
 ├── README.md
+```
 
 
 ---
