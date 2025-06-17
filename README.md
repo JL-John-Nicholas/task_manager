@@ -1,62 +1,70 @@
 # 📝 Task Manager App
 
-A full-stack web application for task management with authentication, status tracking (To Do, In Progress, Done), priority indicators, due dates, comments, and activity logs.
+A full-stack web application for managing personal or team tasks with user authentication, Kanban-style status tracking (To Do, In Progress, Done), due dates, priorities, comments, and activity logs.
 
 ---
 
 ## 🚀 Features
 
-- ✅ User registration and login with JWT authentication
-- ✅ Task creation with priority and due date
-- ✅ Status management: To Do, In Progress, Done
-- ✅ Comment system for collaboration
-- ✅ Activity logs for task changes
-- ✅ Responsive and clean UI (Vanilla JS + CSS)
-- ✅ RESTful API with Node.js, Express, MongoDB
+- 🔐 User registration and login (JWT authentication)
+- 📝 Create tasks with priority and due date
+- 🧭 Track task status (To Do, In Progress, Done)
+- 💬 Add and view comments on tasks
+- 🕓 View activity logs for task changes
+- 🎨 Responsive, clean UI with Vanilla JS and CSS
+- ⚙️ RESTful API using Node.js, Express, and MongoDB
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend         | Backend             | Database   |
-|------------------|---------------------|------------|
-| HTML, CSS, JS    | Node.js, Express.js | MongoDB    |
-| Fetch API        | JWT, Mongoose       | Mongoose   |
+| Frontend       | Backend             | Database   |
+|----------------|----------------------|------------|
+| HTML, CSS, JS  | Node.js, Express.js  | MongoDB    |
+| Fetch API      | JWT, Mongoose        | Mongoose ODM |
 
 ---
 
-## 📂 Folder Structure
-
-.
-├── backend
-│ ├── controllers
-│ ├── middleware
-│ ├── models
-│ ├── routes
+## 📁 Folder Structure
+project-root/
+├── backend/
+│ ├── controllers/
+│ ├── middleware/
+│ ├── models/
+│ ├── routes/
 │ ├── server.js
 │ ├── package.json
-├── frontend
-│ ├── js
-│ ├── styles
+│ └── .env.example
+├── frontend/
+│ ├── js/
+│ ├── styles/
 │ ├── index.html
-│ ├── dashboard.html
+│ └── dashboard.html
 ├── .gitignore
-├── .env.example
-
+├── README.md
 
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 🔧 Backend (Node.js + MongoDB)
+### 🔧 Backend Setup (Node.js + MongoDB)
 
 ```bash
 cd backend
 npm install
 
 
+
+Create a .env file in the backend folder:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+
+
+Then start the backend server:
+
 node server.js
-
-
-nodemon server.js
+# or
+npx nodemon server.js
