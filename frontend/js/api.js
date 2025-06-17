@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://task-manager-backend-z4pm.onrender.com';
 
 async function api(endpoint, method = 'GET', body = null) {
   const token = localStorage.getItem('token');
