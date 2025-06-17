@@ -34,6 +34,8 @@ form.addEventListener('submit', async (e) => {
   // });
 
   const data = await res.json();
+  console.log('Register response:', data); // ✅ add this
+  alert(data.msg || 'Something went wrong');
 
   if (isLogin && res.ok) {
     localStorage.setItem('token', data.token);
