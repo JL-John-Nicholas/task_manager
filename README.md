@@ -8,7 +8,7 @@ Manage tasks across a Kanban board with features like user authentication, task 
 ## 🌐 Live Demo
 
 - **App:** [task-manager-caw.netlify.app](https://task-manager-caw.netlify.app)
-- **Demo Video:** [Watch on Loom](#) <!-- Replace # with actual Loom video link -->
+- **Demo Video:** [Watch on Loom](https://www.loom.com/share/d22535ff52b047ec9e6b54a53f732ff8?sid=2d77eb13-85c7-45d7-9582-3291640e4822) <!-- Replace # with actual Loom video link -->
 
 ---
 
@@ -95,7 +95,7 @@ Manage tasks across a Kanban board with features like user authentication, task 
 
 ## 🤝 Author
 
-**JL JOHN NICHOLAS** – [GitHub](https://github.com/your-github-username) <!-- Replace with actual GitHub link -->
+**JL JOHN NICHOLAS** – [GitHub](https://github.com/JL-John-Nicholas) <!-- Replace with actual GitHub link -->
 
 ---
 
