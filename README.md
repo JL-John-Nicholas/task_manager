@@ -27,3 +27,36 @@ A full-stack web application for task management with authentication, status tra
 
 ## 📂 Folder Structure
 
+.
+├── backend
+│ ├── controllers
+│ ├── middleware
+│ ├── models
+│ ├── routes
+│ ├── server.js
+│ ├── package.json
+├── frontend
+│ ├── js
+│ ├── styles
+│ ├── index.html
+│ ├── dashboard.html
+├── .gitignore
+├── .env.example
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🔧 Backend (Node.js + MongoDB)
+
+```bash
+cd backend
+npm install
+
+
+node server.js
+
+
+nodemon server.js
