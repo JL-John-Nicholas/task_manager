@@ -25,27 +25,6 @@ A full-stack web application for managing personal or team tasks with user authe
 
 ---
 
-## 📁 Folder Structure
-project-root/
-├── backend/
-│ ├── controllers/
-│ ├── middleware/
-│ ├── models/
-│ ├── routes/
-│ ├── server.js
-│ ├── package.json
-│ └── .env.example
-├── frontend/
-│ ├── js/
-│ ├── styles/
-│ ├── index.html
-│ └── dashboard.html
-├── .gitignore
-├── README.md
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 🔧 Backend Setup (Node.js + MongoDB)
