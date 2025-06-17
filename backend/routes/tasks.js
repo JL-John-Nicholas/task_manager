@@ -6,9 +6,10 @@ const Activity = require('../models/Activity');
 
 // Get all tasks
 router.get('/', auth, async (req, res) => {
-  const tasks = await Task.find();
+  const tasks = await Task.find({ created_by: req.user });
   res.json(tasks);
 });
+
 
 // Create a new task
 router.post('/', auth, async (req, res) => {
