@@ -4,6 +4,8 @@ A full-stack web application for managing personal or team tasks with user authe
 
 ---
 
+🌐 **Live Demo:** [task-manager-caw.netlify.app](https://task-manager-caw.netlify.app)
+
 ## 🚀 Features
 
 - 🔐 User registration and login (JWT authentication)
