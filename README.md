@@ -1,51 +1,101 @@
 # 📝 Task Manager App
 
-A full-stack web application for managing personal or team tasks with user authentication, Kanban-style status tracking (To Do, In Progress, Done), due dates, priorities, comments, and activity logs.
+A clean, full-stack task management web application built with **Node.js**, **Express**, **MongoDB**, and a **Vanilla JS frontend**.  
+Manage tasks across a Kanban board with features like user authentication, task priorities, comments, activity logs, and due dates.
 
 ---
 
-🌐 **Live Demo:** [task-manager-caw.netlify.app](https://task-manager-caw.netlify.app)
+## 🌐 Live Demo
+
+- **App:** [task-manager-caw.netlify.app](https://task-manager-caw.netlify.app)
+- **Demo Video:** [Watch on Loom](#) <!-- Replace # with actual Loom video link -->
+
+---
 
 ## 🚀 Features
 
-- 🔐 User registration and login (JWT authentication)
-- 📝 Create tasks with priority and due date
-- 🧭 Track task status (To Do, In Progress, Done)
-- 💬 Add and view comments on tasks
-- 🕓 View activity logs for task changes
-- 🎨 Responsive, clean UI with Vanilla JS and CSS
-- ⚙️ RESTful API using Node.js, Express, and MongoDB
+- 🔐 **JWT Authentication** – Register and login securely
+- 📝 **Task Management** – Add tasks with title, description, priority, and due date
+- 🧭 **Status Tracking** – Move tasks across “To Do”, “In Progress”, and “Done”
+- 💬 **Comment System** – Add comments on individual tasks
+- 📜 **Activity Logs** – Track updates and deletions per task
+- 🎨 **Responsive UI** – Clean design using plain HTML, CSS, and Tailwind (optional)
+- ⚙️ **RESTful API** – Fully functional backend using Express + MongoDB
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend       | Backend             | Database   |
-|----------------|----------------------|------------|
-| HTML, CSS, JS  | Node.js, Express.js  | MongoDB    |
-| Fetch API      | JWT, Mongoose        | Mongoose ODM |
+| Layer     | Technology                          |
+|-----------|-------------------------------------|
+| Frontend  | HTML, CSS, JavaScript, Tailwind (CDN)|
+| Backend   | Node.js, Express.js                 |
+| Database  | MongoDB (Mongoose ODM)              |
+| Auth      | JSON Web Tokens (JWT)               |
 
 ---
 
-## ⚙️ Setup Instructions
+## 📁 Folder Structure
+
+.
+├── backend
+│ ├── models/
+│ ├── routes/
+│ ├── middleware/
+│ ├── controllers/ # (optional)
+│ ├── server.js
+│ └── .env # Environment variables
+├── frontend
+│ ├── index.html
+│ ├── dashboard.html
+│ ├── js/
+│ ├── styles/
+│ └── _redirects
+├── README.md
+
+
+---
+
+## ⚙️ Local Setup Instructions
 
 ### 🔧 Backend Setup (Node.js + MongoDB)
 
-```bash
-cd backend
-npm install
+1. **Navigate to the backend folder and install dependencies:**
+    ```
+    cd backend
+    npm install
+    ```
 
+2. **Create a `.env` file in the backend folder and add the following:**
+    ```
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
+    PORT=5000
+    ```
 
+3. **Start the backend server:**
+    ```
+    node server.js
+    # or
+    npx nodemon server.js
+    ```
 
-Create a .env file in the backend folder:
+---
 
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-PORT=5000
+### 💻 Frontend Setup
 
+1. **Open the `frontend/` folder**
+2. **Run `index.html` directly in your browser** (or use Live Server if needed)
+3. **Ensure `api.js` and `auth.js` point to your backend:**
+    ```
+    const API_BASE = 'http://localhost:5000'; // or your Render URL
+    ```
 
-Then start the backend server:
+---
 
-node server.js
-# or
-npx nodemon server.js
+## 🤝 Author
+
+**JL JOHN NICHOLAS** – [GitHub](https://github.com/your-github-username) <!-- Replace with actual GitHub link -->
+
+---
+
