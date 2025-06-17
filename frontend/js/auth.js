@@ -18,7 +18,7 @@ form.addEventListener('submit', async (e) => {
 
   const endpoint = isLogin ? '/auth/login' : '/auth/register';
 
-  const res = await fetch(`https://task-manager-backend-z4pm.onrender.com/auth/login`, {
+  const res = await fetch(`https://task-manager-backend-z4pm.onrender.com${endpoint}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, password })
