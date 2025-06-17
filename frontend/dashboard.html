@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager - Dashboard</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Task Dashboard</h1>
+    <button id="logout">Logout</button>
+  </header>
+
+  <section id="task-creator">
+    <h3>Create New Task</h3>
+    <form id="task-form">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="description" placeholder="Description"></textarea>
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="date" id="due_date" required />
+      <button type="submit">Add Task</button>
+    </form>
+  </section>
+
+  <main class="kanban">
+    <div class="column" data-status="todo">
+      <h2>To Do</h2>
+      <div class="task-list" id="todo-tasks"></div>
+    </div>
+    <div class="column" data-status="in_progress">
+      <h2>In Progress</h2>
+      <div class="task-list" id="in_progress-tasks"></div>
+    </div>
+    <div class="column" data-status="done">
+      <h2>Done</h2>
+      <div class="task-list" id="done-tasks"></div>
+    </div>
+  </main>
+  <!-- Comment Modal -->
+  <div id="comment-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Comments</h3>
+      <div id="comment-list"></div>
+      <textarea id="new-comment" placeholder="Add a comment"></textarea>
+      <button id="submit-comment">Post</button>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <!-- 📜 Activity Modal -->
+  <div id="activity-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Activity Log</h3>
+      <div id="activity-list"></div>
+      <button id="close-activity">Close</button>
+    </div>
+  </div>
+
+
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
